@@ -2,12 +2,11 @@
 # Created by https://www.gitignore.io/api/macos,swift,xcode,fastlane,carthage
 
 ### Carthage ###
-# Carthage
+Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 
-Carthage/Build
 
 ### fastlane ###
 # fastlane - A streamlined workflow tool for Cocoa deployment

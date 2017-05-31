@@ -11,7 +11,11 @@
 		0A763B691EDE427C00D34172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A763B681EDE427C00D34172 /* AppDelegate.swift */; };
 		0A763B701EDE427C00D34172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A763B6F1EDE427C00D34172 /* Assets.xcassets */; };
 		0A763B731EDE427C00D34172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A763B711EDE427C00D34172 /* LaunchScreen.storyboard */; };
-		0A763B7E1EDE427C00D34172 /* TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A763B7D1EDE427C00D34172 /* TodoTests.swift */; };
+		0A763B7E1EDE427C00D34172 /* FirstSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A763B7D1EDE427C00D34172 /* FirstSpec.swift */; };
+		0AF15E471EDE4CDF007DE377 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF15E451EDE4CDF007DE377 /* Nimble.framework */; };
+		0AF15E481EDE4CDF007DE377 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF15E461EDE4CDF007DE377 /* Quick.framework */; };
+		0AF15E4A1EDE4D16007DE377 /* Nimble.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 0AF15E451EDE4CDF007DE377 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AF15E4B1EDE4D16007DE377 /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 0AF15E461EDE4CDF007DE377 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +28,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0AF15E491EDE4D00007DE377 /* Carthage */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AF15E4A1EDE4D16007DE377 /* Nimble.framework in Carthage */,
+				0AF15E4B1EDE4D16007DE377 /* Quick.framework in Carthage */,
+			);
+			name = Carthage;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0A17B52E1EDE452D001480B9 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		0A763B651EDE427C00D34172 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,8 +51,10 @@
 		0A763B721EDE427C00D34172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A763B741EDE427C00D34172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A763B791EDE427C00D34172 /* TodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A763B7D1EDE427C00D34172 /* TodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTests.swift; sourceTree = "<group>"; };
+		0A763B7D1EDE427C00D34172 /* FirstSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSpec.swift; sourceTree = "<group>"; };
 		0A763B7F1EDE427C00D34172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF15E451EDE4CDF007DE377 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		0AF15E461EDE4CDF007DE377 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF15E471EDE4CDF007DE377 /* Nimble.framework in Frameworks */,
+				0AF15E481EDE4CDF007DE377 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +83,7 @@
 				0A763B671EDE427C00D34172 /* Todo */,
 				0A763B7C1EDE427C00D34172 /* TodoTests */,
 				0A763B661EDE427C00D34172 /* Products */,
+				0AF15E441EDE4CDF007DE377 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,10 +111,19 @@
 		0A763B7C1EDE427C00D34172 /* TodoTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A763B7D1EDE427C00D34172 /* TodoTests.swift */,
+				0A763B7D1EDE427C00D34172 /* FirstSpec.swift */,
 				0A763B7F1EDE427C00D34172 /* Info.plist */,
 			);
 			path = TodoTests;
+			sourceTree = "<group>";
+		};
+		0AF15E441EDE4CDF007DE377 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AF15E451EDE4CDF007DE377 /* Nimble.framework */,
+				0AF15E461EDE4CDF007DE377 /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +153,7 @@
 				0A763B751EDE427C00D34172 /* Sources */,
 				0A763B761EDE427C00D34172 /* Frameworks */,
 				0A763B771EDE427C00D34172 /* Resources */,
+				0AF15E491EDE4D00007DE377 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -206,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A763B7E1EDE427C00D34172 /* TodoTests.swift in Sources */,
+				0A763B7E1EDE427C00D34172 /* FirstSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +391,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = J5P786SDN2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TodoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.TodoTests;
@@ -372,6 +410,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = J5P786SDN2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TodoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.TodoTests;
